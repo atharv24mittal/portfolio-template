@@ -1,151 +1,101 @@
-<!doctype html>
-<html>
-<head>
-	<meta charset="UTF-8">
+body {
+	font-family: 'Segoe UI', Arial, sans-serif;
+	color:#333;
+	background:#f2f4f8;
+}
 
-	<title>Atharv Mittal | Portfolio</title>
-	
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-	
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+h1, h2, h3, h4, nav { 
+	font-family: Arial;
+	font-weight:bold; 
+}
 
-	<link href="styles.css" rel="stylesheet">
+.primary { background:#1f2937; color:#fff; }
+.secondary { background:#ffffff; }
 
-	<meta name="description" content="Personal portfolio of Atharv Mittal - Cloud, AI, ML, Full Stack Developer">
+a { color: #2563eb; }
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+header {
+	padding: 20px;
+}
 
-</head>
+header .wrapper {
+	display: flex;
+	flex-direction: column-reverse;
+}
 
-<body>
-	
-	<header class="primary">
-        <div class="wrapper">
-            
-			<div class="logo-container">
-				<h1>Atharv<br>Mittal<br>Portfolio</h1>
+.logo-container {
+	display: flex;
+	align-items: center;
+	gap:20px;
+}
 
-				<a href="index.html">
-					<img src="https://dummyimage.com/175/c4c4c4/fff&text=AM" alt="logo" id="logo">
-				</a>
-			</div>
-            
-			<nav id="mainnav">
-            	<ul>
-                	<li><a href="#work">Work</a></li>
-                    <li><a href="#about-contact">About</a></li>
-                    <li><a href="#about-contact">Contact</a></li>
-                </ul>
-            </nav>
-            
-        </div>
-    </header>
-    
-    <section id="work">
-   		<div class="wrapper">
-        	<h2>My Best Projects</h2>
+#logo {
+	border-radius: 50%;
+}
 
-        	<section class="featured">
-                <article>
-                	<a href="#">
-						<img src="https://dummyimage.com/510x300/4574b5/ffffff&text=CareSync+24/7" alt="project">
-					</a>
-                </article>
-                
-                <article>
-                	<h3>CareSync 24/7</h3>
-                    <h4>AI Healthcare Platform</h4>
-                    <p>
-						An AI-powered healthcare platform for real-time monitoring, diagnostics,
-						medical records, chat-based assistance, and smart recommendations using
-						cloud infrastructure and machine learning.
-					</p> 
-					<p><a href="#">Cloud + AI + Full Stack Project</a></p> 
-                </article>
-            </section>
-            
-            <section class="projects">
-            
-            	<article>
-                	<h3>Cloud Computing Lab</h3>
-                	<a href="#"><img src="https://dummyimage.com/340x200/efefef/333&text=Cloud+Deployment" alt="image"></a>
-                    <p><strong>Role:</strong> Developer</p>
-                    <p><strong>Description:</strong> IAAS, PAAS, SAAS deployment using Supabase, PythonAnywhere, Vercel.</p>
-                </article>
-                
-                <article>
-                	<h3>Hate Speech LRL</h3>
-                	<a href="#"><img src="https://dummyimage.com/340x200/efefef/333&text=AI+NLP" alt="image"></a>
-                    <p><strong>Role:</strong> ML Engineer</p>
-                    <p><strong>Description:</strong> NLP model for low-resource language hate speech detection.</p>
-                </article>
-                
-                <article>
-                	<h3>Landmark Detection</h3>
-                	<a href="#"><img src="https://dummyimage.com/340x200/efefef/333&text=Computer+Vision" alt="image"></a>
-                    <p><strong>Role:</strong> AI Developer</p>
-                    <p><strong>Description:</strong> Landmark recognition using Google GLDv2 dataset.</p>
-                </article>
-				
-				<article>
-                	<h3>Startup Projects</h3>
-                	<a href="#"><img src="https://dummyimage.com/340x200/efefef/333&text=Entrepreneurship" alt="image"></a>
-                    <p><strong>Role:</strong> Founder</p>
-                    <p><strong>Description:</strong> Multiple startup ideation and entrepreneurship projects.</p>
-                </article>
-            
-            </section>
-            
-        </div>
-    </section>
-    
-    <section id="about-contact" class="secondary">
-   		<div class="wrapper">
-        	
-			<div class="profile-photo">
-            	<img src="https://qfmynaoddtvfuprgfcgb.supabase.co/storage/v1/object/public/image1/PES2UG23CS103.jpg" alt="Atharv Mittal">
-            </div>
-			
-            <article>
-				<h2>About Me</h2>
-				<p>
-					I am Atharv Mittal, a developer passionate about Cloud Computing, Artificial Intelligence,
-					Machine Learning, and Full Stack Development. I love building scalable systems,
-					AI-driven platforms, and startup-focused solutions.
-				</p>
-				<h3>Skills</h3>
-				<p>
-					Cloud Computing, Python, Flask, Supabase, MongoDB, React, AI/ML, NLP, Computer Vision,
-					GitHub, Vercel, Node.js, System Design, Startup Building.
-				</p>
-			</article> 
-                
-			<article>
-				<h2>Contact Me</h2>
-				<p>
-					Open to collaborations, internships, projects, startups and tech innovation.
-					Let’s build something impactful together.
-				</p>
+#mainnav ul {
+	display: flex;
+	justify-content: center;
+}
 
-				<p>
-					<i class="fa fa-envelope"></i> atharv@example.com<br>
-					<i class="fa fa-phone"></i> +91-XXXXXXXXXX
-				</p>
+#mainnav ul li a {
+	color: #60a5fa;
+	padding:0 20px;
+	font-size:18px;
+}
 
-				<p class="social">
-					<a href="https://github.com/atharv24mittal"><i class="fab fa-github"></i></a>
-					<a href="https://www.linkedin.com/in/atharv-mittal-7830ba243/"><i class="fab fa-linkedin"></i></a> 
-				</p>
-			</article>
-                   
-        </div>
-    </section>
-    
-    <footer class="primary">
-    	<div class="wrapper">
-        	<p class="centered">&copy; 2026 Atharv Mittal | All rights reserved</p>
-        </div>
-    </footer>
+#work {
+	background:#fff;
+	padding: 40px 20px;
+}
 
-</body>
-</html>
+.featured {
+	display: flex;
+	gap:20px;
+	flex-wrap: wrap;
+}
+
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+	gap:20px;
+}
+
+.projects article {
+	background:#f8fafc;
+	padding:15px;
+	border-radius:10px;
+	width: 100%;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.profile-photo img {
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.social a {
+	font-size:30px;
+	margin-right:15px;
+}
+
+footer {
+	padding: 20px;
+	text-align:center;
+}
+
+@media(min-width:768px){
+	.projects article{
+		width:48%;
+	}
+}
+
+@media(min-width:1040px){
+	.wrapper{
+		width:1100px;
+		margin:auto;
+	}
+	.projects article{
+		width:23%;
+	}
+}
